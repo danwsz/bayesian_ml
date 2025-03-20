@@ -18,7 +18,7 @@ To run this implementation, follow these steps:
    ```bash
    git clone https://github.com/danwsz/bayesian_ml.git
    ```
-2. Clone a repository used by the author:
+2. Clone a repository used by the author and do some manipulations:
    ```bash
    git clone https://github.com/cemanil/LNets.git lnets
    mv lnets/lnets/* bayesian_ml/lnets/
