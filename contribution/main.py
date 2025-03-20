@@ -30,9 +30,8 @@ if __name__ == '__main__':
     mnist_model.train_model(train_loader=mnist_data.train_loader, epochs=epochs, kl_coeff=1/n, lr=1e-4)
 
     torch.save(mnist_model.state_dict(), "mnist_vae.pth")
-    print("Modèle sauvegardé dans mnist_vae.pth")
+    print("Model saved in mnist_vae.pth")
     
-    # Borne PAC-Bayésienne (en ajustant les paramètres selon tes besoins)
     mnist_bound_dico = recons_bound_diam(
         model=mnist_model,
         val_loader=mnist_data.val_loader,
@@ -49,6 +48,7 @@ if __name__ == '__main__':
 
     
     generated_samples = mnist_model.generate(64).to(device) 
-    plot_generated_images(generated_samples, image_shape=(28, 28), n_row=8)  # Suppression du unpacking
-    plt.savefig("generated_mnist_images_loaded.png")  # Sauvegarde de l'image générée
+    plot_generated_images(generated_samples, image_shape=(28, 28), n_row=8)  
+    plt.savefig("generated_mnist_images_loaded.png") 
+    print("figure saved in mnist_reconstructions.png")
     plt.show()
