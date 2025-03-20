@@ -1,9 +1,8 @@
-import matplotlib.pyplot as plt
 import torch
-
+import matplotlib.pyplot as plt
 from data import MNISTData
 from vae import LipschitzVAE
-from utils import heat_scatter, plot_generated_images
+from utils import plot_reconstructions
 from pac_bayes import recons_bound_diam
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
