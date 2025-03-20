@@ -20,18 +20,18 @@ To run this implementation, follow these steps:
    ```
 2. Clone a repository used by the author:
    ```bash
-   !git clone https://github.com/cemanil/LNets.git lnets
+   git clone https://github.com/cemanil/LNets.git lnets
    mv lnets/lnets/* bayesian_ml/lnets/
+   cp -r bayesian_ml/lnets bayesian_ml/contribution
    cd bayesian_ml
    ```
-2. If you want the classic version of the paper: 
+3. If you want the classic version of the paper: 
    ```bash
    python main.py --config configs/vae.json
-   ```
-3. If you want the improved version: 
+   
+   If you want the improved version do 
    ```bash
    cd contribution
-   python main.py --config configs/vae.json
-   ```
+   ``` before
 
 ## Dan Winszman and Tiffany Zeitoun
