@@ -19,9 +19,13 @@ To run this implementation, follow these steps:
    git clone https://github.com/danwsz/pac-bayes.git
    cd pac-bayes
    ```
-   ```
-2. Run the script:
+2. If you want the classic version of the paper: 
    ```bash
+   python main.py --config configs/vae.json
+   ```
+3. If you want the improved version: 
+   ```bash
+   cd contribution
    python main.py --config configs/vae.json
    ```
 
