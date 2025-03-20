@@ -61,4 +61,5 @@ if __name__ == '__main__':
 
     mnist_model.history.show_losses(['rec_loss', 'kl_div', 'loss'], start_epoch=1)
     plt.savefig("training_losses.png") 
+    print("figure saved in mnist_reconstructions.png")
     plt.show()
