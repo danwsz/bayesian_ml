@@ -12,7 +12,7 @@ batch_size = 256
 train_size = 50000
 n = 20000
 test_size = 20000
-lamda = n / 1
+lamda = n / 1 # You can change the value of lambda (but you also need to change the kl_coeff)
 
 
 if __name__ == '__main__':
