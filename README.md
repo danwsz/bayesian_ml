@@ -1,4 +1,4 @@
-# Bayesian-ML--- MVA
+# Bayesian-ML - MVA
 
 # PAC-Bayes VAE: Statistical Guarantees for Variational Autoencoders
 
