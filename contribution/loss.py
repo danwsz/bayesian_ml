@@ -1,9 +1,6 @@
 import torch
 import torch.nn.functional as F
-
 from torch.distributions import Normal
-
-
 
 class Loss:
     def __init__(self, criterion):
