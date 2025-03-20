@@ -29,9 +29,9 @@ To run this implementation, follow these steps:
    ```bash
    python main.py --config configs/vae.json
    ```
-   If you want the improved version do 
+   If you want the improved version do this before
    ```bash
    cd contribution
-   ``` before
+   ``` 
 
 ## Dan Winszman and Tiffany Zeitoun
