@@ -43,11 +43,24 @@ if __name__ == '__main__':
         prior=mnist_model.prior
     )
 
-    print("PAC-Bayes bound for MNIST:", mnist_bound_dico)
-
+    print("\n Results:")
+    for key, value in mnist_bound_dico.items():
+      print(f" {key}: {value}")
     
-    generated_samples = mnist_model.generate(64).to(device) 
-    plot_generated_images(generated_samples, image_shape=(28, 28), n_row=8)  
-    plt.savefig("generated_mnist_images_loaded.png") 
+    mnist_model.eval()
+    test_loader = mnist_data.test_loader
+    batch, _ = next(iter(test_loader)) 
+    batch = batch.to(device)
+
+
+    # Reconstruction of the images
+    with torch.no_grad():
+        z, _, _ = mnist_model.encode(batch.view(batch_size, -1))  
+        reconstructed_images = mnist_model.decode(z).cpu()  
+
+    plot_reconstructions(batch, reconstructed_images, n=8)
+
+    mnist_model.history.show_losses(['rec_loss', 'kl_div', 'loss'], start_epoch=1)
+    plt.savefig("training_losses.png") 
     print("figure saved in mnist_reconstructions.png")
     plt.show()
