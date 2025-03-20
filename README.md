@@ -16,7 +16,7 @@ To run this implementation, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/danwsz/pac-bayes.git
+   git clone https://github.com/danwsz/Bayesian-ML---MVA.git
    cd pac-bayes
    ```
 2. If you want the classic version of the paper: 
