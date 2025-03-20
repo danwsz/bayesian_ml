@@ -14,9 +14,14 @@ The **`contribution/`** folder contains the same files as the original implement
 ## Installation & Usage
 To run this implementation, follow these steps:
 
-1. Clone the repository:
+1. Clone this repository:
    ```bash
    git clone https://github.com/danwsz/bayesian_ml.git
+   ```
+2. Clone a repository used by the author:
+   ```bash
+   !git clone https://github.com/cemanil/LNets.git lnets
+   mv lnets/lnets/* bayesian_ml/lnets/
    cd bayesian_ml
    ```
 2. If you want the classic version of the paper: 
