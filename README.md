@@ -16,18 +16,18 @@ To run this implementation, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/danwsz/bayesian_ml.git
+   !git clone https://github.com/danwsz/bayesian_ml.git
    ```
 2. Clone a repository used by the author and do some manipulations:
    ```bash
-   git clone https://github.com/cemanil/LNets.git lnets
+   !git clone https://github.com/cemanil/LNets.git lnets
    mv lnets/lnets/* bayesian_ml/lnets/
-   cp -r bayesian_ml/lnets bayesian_ml/contribution
+   !cp -r bayesian_ml/lnets bayesian_ml/contribution
    cd bayesian_ml
    ```
 3. If you want the classic version of the paper: 
    ```bash
-   python main.py --config configs/vae.json
+   !python main.py --config configs/vae.json
    ```
    If you want the improved version do this before
    ```bash
