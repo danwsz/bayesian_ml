@@ -4,8 +4,6 @@ import torch
 from loss import BoundLoss
 from utils import get_device
 
-
-# Thm 4.3
 def recons_bound_diam(model, val_loader, test_loader, lamda, k_phi, k_theta, delta, diameter, prior):
     # val_loader is the validation data-loader, used to compute the rhs of the bound.
     # test_loader is used to estimate the expected reconstruction loss
