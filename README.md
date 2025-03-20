@@ -28,7 +28,7 @@ To run this implementation, follow these steps:
 3. If you want the classic version of the paper: 
    ```bash
    python main.py --config configs/vae.json
-   
+   ```
    If you want the improved version do 
    ```bash
    cd contribution
